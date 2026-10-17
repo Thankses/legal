@@ -7,24 +7,14 @@
   <meta name="description" content="Terms and Conditions, Privacy Policy and Refund Policy for THANKSES.">
   <style>
     :root {
-      --bg: #fafaf7;
+      color-scheme: light;
+      --bg: #ffffff;
       --surface: #ffffff;
-      --text: #1f2430;
-      --muted: #5d6475;
+      --text: #000000;
+      --muted: #333333;
       --accent: #0f766e;
-      --accent-soft: #e6f4f2;
-      --border: #e4e6ec;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #12151c;
-        --surface: #1a1e28;
-        --text: #e8eaf0;
-        --muted: #9aa2b4;
-        --accent: #5eead4;
-        --accent-soft: #16302d;
-        --border: #2a3040;
-      }
+      --accent-soft: #f1f5f4;
+      --border: #dcdcdc;
     }
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; scroll-padding-top: 64px; }
@@ -58,6 +48,8 @@
       color: var(--accent);
       font-size: 15px;
     }
+    .brand-wrap { display: flex; align-items: center; gap: 8px; }
+    .logo { height: 32px; width: auto; display: block; }
     .tabs { display: flex; gap: 6px; }
     .tabs a {
       color: var(--muted);
@@ -118,7 +110,10 @@
 <body id="top">
   <div class="topbar">
     <div class="inner">
-      <span class="brand">THANKSES</span>
+      <span class="brand-wrap">
+        <img class="logo" src="logo.png" alt="THANKSES logo" width="32" height="32">
+        <span class="brand">THANKSES</span>
+      </span>
       <nav class="tabs">
         <a href="#terms">Terms</a>
         <a href="#privacy">Privacy</a>
